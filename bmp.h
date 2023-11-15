@@ -33,10 +33,10 @@ BMP openBMP(const char *FILEPATH)
     for(int y = bmp.height-1; y >= 0; --y) {
         for(int x = 0; x < bmp.width; ++x) {
             uint32_t color = 0x00000000;
-            int8_t red = 0x00;
-            int8_t green = 0x00;
-            int8_t blue = 0x00;
-            int8_t alpha = 0x00;
+            uint8_t red = 0x00;
+            uint8_t green = 0x00;
+            uint8_t blue = 0x00;
+            uint8_t alpha = 0x00;
             fread(&blue, sizeof(blue), 1, file);
             fread(&green, sizeof(green), 1, file);
             fread(&red, sizeof(red), 1, file);
